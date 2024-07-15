@@ -7,3 +7,19 @@
   font-style: italic;
   transition: all 0.2s ease;
 }
+
+// MOBILE
+@media screen and (max-width: $tablet) {
+  .shrink {
+    .logo {
+      font-size: 10px;
+    }
+  }
+}
+
+// DESKTOP
+@media screen and (min-width: $desktop) {
+  .logo {
+    text-align: left;
+  }
+}
