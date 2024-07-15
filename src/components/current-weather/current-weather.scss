@@ -1,0 +1,116 @@
+.current-weather {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  margin: 40px auto;
+  transition: all 0.2s ease;
+
+  .icon,
+  .degrees {
+    font-size: 50px;
+    display: inline-flex;
+    align-items: baseline;
+
+    span {
+      font-size: 25px;
+    }
+  }
+
+  .location {
+    font-size: 25px;
+    text-align: left;
+
+    div {
+      font-size: 15px;
+      line-height: 1;
+    }
+  }
+}
+
+// MOBILE
+@media screen and (max-width: $tablet) {
+  .shrink {
+    .current-weather {
+      margin-top: 24px;
+      margin-bottom: 24px;
+    }
+
+    .icon,
+    .degrees {
+      font-size: 25px;
+
+      span {
+        font-size: 12.5px;
+      }
+    }
+
+    .location {
+      font-size: 18px;
+      line-height: 1;
+
+      div {
+        font-size: 12px;
+        display: inline-block;
+
+        &:first-of-type {
+          margin-right: 5px;
+        }
+      }
+    }
+  }
+}
+
+// TABLET
+@media screen and (min-width: $tablet) {
+  .current-weather {
+    .degrees {
+      font-size: 70px;
+    }
+
+    .location {
+      line-height: 1;
+      padding-left: 20px;
+
+      p {
+        font-size: 30px;
+      }
+
+      div {
+        display: inline-block;
+
+        &:first-of-type {
+          margin-right: 5px;
+        }
+      }
+    }
+  }
+}
+
+// DESKTOP
+@media screen and (min-width: $desktop) {
+  .current-weather {
+    justify-content: left;
+
+    .icon {
+      font-size: 65px;
+    }
+
+    .degrees {
+      font-size: 90px;
+
+      span {
+        font-size: 50px;
+      }
+    }
+
+    .location {
+      line-height: 0.8;
+
+      p {
+        font-size: 50px;
+      }
+    }
+  }
+}
