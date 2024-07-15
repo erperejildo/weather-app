@@ -1,5 +1,3 @@
-// app is published here: https://main--weather-dani.netlify.app
-// this file is just to enable API calls
 [[redirects]]
 from = "/*"
 to = "/"
