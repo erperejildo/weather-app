@@ -1,0 +1,30 @@
+.dark {
+  .MuiFormLabel-root,
+  .MuiInputBase-input {
+    color: #fff;
+  }
+
+  .MuiInput-root {
+    &:before {
+      border-color: #fff;
+    }
+
+    svg {
+      color: #fff;
+    }
+  }
+}
+
+// MOBILE & TABLET
+@media screen and (max-width: $desktop) {
+  .details .search {
+    display: none;
+  }
+}
+
+// DESKTOP
+@media screen and (min-width: $desktop) {
+  .fixed-wrapper .error {
+    display: none;
+  }
+}

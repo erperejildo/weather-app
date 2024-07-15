@@ -1,6 +1,7 @@
 import { useContext, useEffect, useState } from 'react';
 import './App.scss';
 import { Logo } from './components/logo/logo';
+import { Search } from './components/search/search';
 import { ForecastContext } from './ForecastContext';
 
 function App() {
@@ -30,6 +31,7 @@ function App() {
     <div className="app">
       <div className={getHeaderClassName()}>
         <Logo />
+        {!shrinkHeader && <Search />}
       </div>
     </div>
   );
