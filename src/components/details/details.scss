@@ -86,3 +86,25 @@
     }
   }
 }
+
+// THEMES
+.light {
+  .details {
+    background: rgba(255, 255, 255, 0.3);
+  }
+
+  .title,
+  .time p {
+    color: var(--color-grey);
+  }
+}
+.dark {
+  .details {
+    background: rgba(0, 0, 0, 0.3);
+  }
+
+  .title,
+  .time p {
+    color: #fff;
+  }
+}
