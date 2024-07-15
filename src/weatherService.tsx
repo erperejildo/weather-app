@@ -1,10 +1,9 @@
 import { Forecast } from './interfaces/Forecast';
 
-// STEPS:
-// create an account here: https://www.visualcrossing.com
-// create an .env file in the root of the project with this content:
-// VITE_WEATHER_API_KEY=YOU_KEY_HERE
-const API_KEY = import.meta.env.VITE_WEATHER_API_KEY;
+// not necessary since it has to be public in url
+// but in case we'd need to keep it secret this is how
+// const API_KEY = import.meta.env.VITE_WEATHER_API_KEY;
+const API_KEY = 'JK6YJ4UGPEWCWGCS26XUZAGH9';
 const BASE_URL =
   'https://weather.visualcrossing.com/VisualCrossingWebServices/rest/services/timeline/';
 
