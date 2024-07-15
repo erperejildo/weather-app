@@ -1,3 +1,9 @@
+.light {
+  .Mui-focused label {
+    color: inherit;
+  }
+}
+
 .dark {
   .MuiFormLabel-root,
   .MuiInputBase-input {

@@ -44,12 +44,6 @@ $pageGap: 24px;
     }
   }
 
-  .fixed-wrapper:not(.shrink) {
-    .logo {
-      text-align: left;
-    }
-  }
-
   .shrink {
     backdrop-filter: blur(15px);
     border-radius: 0 0 5px 5px;

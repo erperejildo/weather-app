@@ -17,6 +17,15 @@
   }
 }
 
+// TABLET
+@media screen and (min-width: $tablet) and (max-width: $desktop) {
+  .fixed-wrapper:not(.shrink) {
+    .logo {
+      text-align: left;
+    }
+  }
+}
+
 // DESKTOP
 @media screen and (min-width: $desktop) {
   .logo {

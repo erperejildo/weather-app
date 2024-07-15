@@ -9,6 +9,7 @@ type WeatherProps = {
 
 const WeatherComponent: FC<WeatherProps> = ({ icon }) => {
   if (!isWeatherIconName(icon)) {
+    // Handle unknown icon gracefully
     return <MdErrorOutline />;
   }
 
