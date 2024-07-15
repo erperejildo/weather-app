@@ -4,6 +4,7 @@ import { CurrentWeather } from './components/current-weather/current-weather';
 import { Details } from './components/details/detaisl';
 import { Logo } from './components/logo/logo';
 import { Search } from './components/search/search';
+import { SnackbarMsg } from './components/snackbar-msg/snackbar-msg';
 import { ForecastContext } from './ForecastContext';
 import { Background } from './interfaces/Background';
 import { weatherBgMap } from './utils/backgrounds';
@@ -50,6 +51,7 @@ function App() {
         <CurrentWeather />
       </div>
       <Details />
+      <SnackbarMsg />
     </div>
   );
 }
