@@ -1,0 +1,88 @@
+.details {
+  backdrop-filter: blur(15px);
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  border-radius: 5px;
+  margin-top: 240px;
+
+  .title {
+    text-transform: uppercase;
+  }
+
+  .daily-details {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    border-bottom: 1px solid rgb(194, 194, 194);
+    padding-bottom: 15px;
+
+    div {
+      width: 50%;
+      display: inline-flex;
+      align-items: center;
+      margin-top: 24px;
+
+      &:nth-child(even) {
+        justify-content: end;
+
+        svg {
+          margin-left: 10px;
+          font-size: 25px;
+        }
+      }
+    }
+  }
+
+  .hourly {
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+
+    .icon {
+      font-size: 35px;
+    }
+
+    .time {
+      flex: 1;
+      text-align: left;
+
+      p {
+        font-size: 14px;
+      }
+    }
+
+    .degrees {
+      font-size: 25px;
+    }
+  }
+}
+
+// TABLET
+@media screen and (min-width: $tablet) and (max-width: $desktop) {
+  .details {
+    margin-left: 16px;
+    margin-right: 16px;
+    padding-left: 90px;
+    padding-right: 90px;
+  }
+}
+
+// DESKTOP
+@media screen and (min-width: $desktop) {
+  .details {
+    margin-top: 0;
+    margin-left: 60%;
+    padding: 10px 20px;
+    width: 100%;
+
+    .search {
+      padding-bottom: 40px;
+    }
+
+    .title {
+      text-align: left;
+    }
+  }
+}

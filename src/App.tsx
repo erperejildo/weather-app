@@ -1,6 +1,7 @@
 import { useContext, useEffect, useState } from 'react';
 import './App.scss';
 import { CurrentWeather } from './components/current-weather/current-weather';
+import { Details } from './components/details/detaisl';
 import { Logo } from './components/logo/logo';
 import { Search } from './components/search/search';
 import { ForecastContext } from './ForecastContext';
@@ -35,6 +36,7 @@ function App() {
         {!shrinkHeader && <Search />}
         <CurrentWeather />
       </div>
+      <Details />
     </div>
   );
 }
