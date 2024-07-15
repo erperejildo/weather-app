@@ -1,42 +1,81 @@
+$pageGap: 24px;
+
 #root {
   max-width: 1280px;
   margin: 0 auto;
-  padding: 2rem;
+  padding: $pageGap;
   text-align: center;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
-}
-
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+.app {
+  .fixed-wrapper {
+    position: fixed;
+    top: 0;
+    padding-top: $pageGap;
+    width: calc(100% - $pageGap * 2);
   }
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
+// TABLET
+@media screen and (min-width: $tablet) {
+  .fixed-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+
+    .logo,
+    .search {
+      flex-grow: 1;
+      width: auto;
+    }
   }
 }
 
-.card {
-  padding: 2em;
+// MOBILE & TABLET
+@media screen and (max-width: $desktop) {
+  .light {
+    .shrink {
+      background: rgba(255, 255, 255, 0.3);
+    }
+  }
+  .dark {
+    .shrink {
+      background: rgba(36, 36, 36, 0.3);
+    }
+  }
+
+  .fixed-wrapper:not(.shrink) {
+    .logo {
+      text-align: left;
+    }
+  }
+
+  .shrink {
+    backdrop-filter: blur(15px);
+    border-radius: 0 0 5px 5px;
+    padding-top: 10px;
+    z-index: 1;
+  }
 }
 
-.read-the-docs {
-  color: #888;
+// DESKTOP
+@media screen and (min-width: $desktop) {
+  .app {
+    display: flex;
+
+    .fixed-wrapper {
+      width: calc(60% - $pageGap);
+
+      .search {
+        display: none;
+      }
+    }
+  }
+}
+
+// THEME
+.app {
+  &.dark {
+    color: #fff;
+  }
 }
