@@ -17,23 +17,6 @@ You can also check the app here: https://main--weather-dani.netlify.app
 npm run test
 ```
 
-## CORE REQUIREMENTS
-
-1. Technologies: TypeScript, React, CSS, ESLint, Prettier, Testing (React Testing Library or your preferred testing framework).: DONE
-2. Search for a City: Users can enter a city name in the search bar to get the current weather.: DONE
-3. Display Weather Data: Show the current temperature, weather conditions, humidity, and wind speed for the searched city, as showcased in the Figma file. You can choose mobile, tablet, or desktop view.: DONE
-4. Testing: Write tests for the relevant functionality.: DONE (not for the whole app for tested utils)
-
-## BONUS POINTS
-
-1. Ensure the app looks good on, desktop, tablet, and mobile screens: DONE
-2. Display appropriate error messages for invalid city names or API errors.: DONE (using Toast)
-3. Use Vite as the build tool, Tailwind CSS for styling, and TanStack Query for data fetching/caching.: (DONE, except for TanStack, just using fetch)
-4. Load a different background image depending on the weather (hot/cold/cloudy/rain/etc).: DONE
-5. For dark backgrounds, the app switches to a dark mode.: DONE
-6. Add a dropdown with the recent places searched.: DONE
-7. Use any additional library/package/UI toolkit if you think it helps achieve a better result. We recommend using the components from Shadcn.: DONE
-
 ## FINAL LOOK
 
 Light:
